@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>May tinh cam tay</title>
+    <link rel="stylesheet" href="Mtct.css">
+</head>
+
+<body>
+    <form name="maytinhcamtay">
+        <table>
+            <tbody>
+                <div>
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" name="display" disabled>
+                        </td>
+                    </tr>
+                </div>
+                <tr>
+                    <td>
+                        <input type="button" class="operator" name="cong" value="+" onclick="maytinhcamtay.display.value +='+'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="tru" value="-" onclick="maytinhcamtay.display.value +='-'">
+
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="nhan" value="x" onclick="maytinhcamtay.display.value +='*'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="chia" value="/" onclick="maytinhcamtay.display.value +='/'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="operator" name="seven" value="7" onclick="maytinhcamtay.display.value +='7'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="eight" value="8" onclick="maytinhcamtay.display.value +='8'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="nine" value="9" onclick="maytinhcamtay.display.value +='9'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="zero" value="0" onclick="maytinhcamtay.display.value +='0'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="operator" name="four" value="4" onclick="maytinhcamtay.display.value +='4'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="five" value="5" onclick="maytinhcamtay.display.value +='5'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="six" value="6" onclick="maytinhcamtay.display.value +='6'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="xoa" value="C" onclick="maytinhcamtay.display.value =' '">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="operator" name="one" value="1" onclick="maytinhcamtay.display.value +='1'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="two" value="2" onclick="maytinhcamtay.display.value +='2'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="three" value="3" onclick="maytinhcamtay.display.value +='3'">
+                    </td>
+                    <td>
+                        <input type="button" class="operator" name="bang" value="=" onclick="maytinhcamtay.display.value = eval(maytinhcamtay.display.value)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
